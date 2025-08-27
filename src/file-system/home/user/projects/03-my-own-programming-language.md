@@ -1,0 +1,15 @@
+# King of Dattes
+## Projet Entrepreneurial
+
+A full-stack E-commerce platform specializing in the sale of Tunisian products (dates, kouffa, etc.) with comprehensive product management and secure payment processing.
+
+**Frontend:** React.js, TypeScript
+**Backend & API:** NestJS
+**Base de données:** PostgreSQL
+**ORM:** Prisma
+**Services:** Supabase
+**Platforme de déploiement:** Azure
+
+This project demonstrates my expertise in building scalable e-commerce platforms with secure payment processing and comprehensive management systems.
+
+**🔗 [View Project](https://kingofdattes.com)**

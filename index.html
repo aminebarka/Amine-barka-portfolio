@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Amine Barka – Personal Website</title>
+    <meta
+      name="description"
+      content="My name is Amine Barka, I'm a passionate web developer and software engineer. I have a passion for all things technology and design, from software engineering & machine learning to UI/UX & 3D graphics."
+    />
+
+    <link rel="icon" type="image/png" href="/icon/32x32.png" />
+
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,viewport-fit=cover"
+    />
+    <link rel="apple-touch-icon" sizes="180x180" href="/icon/180x180.png" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta
+      name="apple-mobile-web-app-title"
+      content="Amine Barka – Personal Website"
+    />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+    <meta name="theme-color" content="#f6d4b1" />
+
+    <meta property="og:title" content="Amine Barka – Personal Website" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://aminebarka.dev/" />
+    <meta property="og:image" content="https://aminebarka.dev/icon/og-img1.png" />
+    <meta
+      name="og:description"
+      content="My name is Amine Barka, I'm a passionate web developer and software engineer. I have a passion for all things technology and design, from software engineering & machine learning to UI/UX & 3D graphics."
+    />
+    <link rel="manifest" href="/manifest.json" />
+    <script type="module" src="/src/main.ts"></script>
+  </head>
+
+  <body>
+    <div id="home"></div>
+
+    <canvas class="webgl"></canvas>
+
+    <div id="hero-backup">
+      <h3>Hi there, I'm</h3>
+      <h1>Amine</h1>
+      <ul>
+        <li>Fullstack Engineer</li>
+        <li>DevOps Engineer</li>
+      </ul>
+    </div>
+
+    <nav>
+      <div class="menu-btn">
+        <button class="btn" onclick="toggleMenu()">
+          <svg width="16" height="16">
+            <rect class="st0" width="16" height="3.2" />
+            <rect y="6.4" class="st0" width="16" height="3.2" />
+            <rect y="12.8" class="st0" width="16" height="3.2" />
+          </svg>
+        </button>
+        <div style="display: flex">
+          <a
+            class="btn"
+            href="mailto:aminebarka1212@gmail.com"
+            title="Email"
+          >
+            <svg width="16" height="16">
+              <path d="M2,3h12c1.1,0,2,0.9,2,2v6c0,1.1-0.9,2-2,2H2c-1.1,0-2-0.9-2-2V5C0,3.9,0.9,3,2,3z"/>
+              <path d="M8,9.5l6-4.5v-1L8,8.5L2,4v1L8,9.5z"/>
+            </svg>
+          </a>
+          <a
+            class="btn"
+            href="https://www.linkedin.com/in/aminebarka/"
+            target="_blank"
+          >
+            <svg width="16" height="16">
+              <path
+                d="M0.1,2c0-1,0.8-1.8,1.9-1.8c1,0,1.8,0.9,1.8,1.8c0,1-0.8,1.9-1.8,1.9C0.9,3.9,0.1,3.1,0.1,2z M0.1,5h3.7v9.8
+                H0.1V5z"
+              />
+              <path
+                d="M15.9,8.5v6.2h-3.5V9.4c0-0.9-0.6-1.6-1.5-1.6c-0.8,0-1.4,0.6-1.4,1.5v5.5H5.8V5h3.7v1
+                c0.6-0.7,1.6-1.2,2.8-1.2C14.4,4.7,15.9,6.3,15.9,8.5z"
+              />
+            </svg>
+          </a>
+          <a
+            class="btn"
+            href="https://github.com/aminebarka"
+            target="_blank"
+          >
+            <svg width="16" height="16">
+              <path
+                d="M10.6,12.9c0-1-0.3-1.6-0.7-2c2.4-0.3,4.9-1.1,4.9-5.2c0-1.1-0.4-2.1-1.1-2.9c0.1-0.3,0.5-1.3-0.1-2.8
+                c0,0-0.9-0.3-3,1.1c-1.7-0.5-3.6-0.5-5.4,0c-2-1.4-3-1.1-3-1.1C1.6,1.4,2,2.5,2.1,2.8C1.4,3.5,1,4.6,1,5.6c0,4.1,2.5,5,4.9,5.3
+                c-0.4,0.4-0.6,0.9-0.7,1.4c-0.6,0.3-2.2,0.7-3.1-0.9c0,0-0.6-1-1.6-1.1c0,0-1.1,0-0.1,0.7c0,0,0.7,0.3,1.1,1.6c0,0,0.6,2.1,3.6,1.5
+                c0,0.9,0,1.8,0,1.8h5.3C10.6,15.9,10.6,14.4,10.6,12.9z"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="menu-body" onclick="closeMenu()">
+        <a href="#home" onclick="closeMenu()">Home</a>
+        <a href="#aboutMe" onclick="closeMenu()">About</a>
+        <a href="#projects" onclick="closeMenu()">Projects</a>
+        <a href="#contact" onclick="closeMenu()">Contact</a>
+      </div>
+
+      <div id="tip-scroll">Scroll &#8595;</div>
+    </nav>
+
+         <main>
+       <section class="scroll-animate fade-in-up">
+         <h1 id="aboutMe">Hi there</h1>
+        <p>
+          My name is Amine Barka, I am a Fullstack & DevOps Engineer specialized in designing and deploying scalable web applications, SaaS platforms, and cloud-native infrastructures. With expertise in React, Node.js, PostgreSQL, Prisma, and CI/CD pipelines, I focus on delivering high-performance, reliable, and user-centric solutions.
+        </p>
+        <p>
+          Passionate about technology, software engineering, and modern system design, I continuously seek to innovate and optimize digital products.
+        </p>
+
+        <p>
+          Below, you will find a selection of my projects that reflect both my technical expertise and my ability to turn ideas into impactful solutions.
+        </p>
+      </section>
+
+             <section class="scroll-animate fade-in-up">
+         <h1 id="projects">Projects</h1>
+        <hr />
+                 <div class="project-item">
+           <h2>DevOpsFlow</h2>
+           <h3>Projet de Fin d'Études | Neopolis Development</h3>
+                 <ul class="skills scroll-animate stagger">
+           <li>React.js</li>
+           <li>Django REST</li>
+           <li>PostgreSQL</li>
+           <li>Docker</li>
+           <li>Kubernetes</li>
+           <li>Terraform</li>
+         </ul>
+        <p>
+           A comprehensive Multi-Cloud Deployment Automation SaaS platform for multi-environment (Dev, Staging, Prod) deployment automation. 
+           Built with React.js frontend, Django REST Framework backend, PostgreSQL database, and comprehensive DevOps tooling including Docker, 
+           Kubernetes, Terraform, GitLab CI, Jenkins, Prometheus, Grafana, and Kafka across AWS, Azure, GCP, DigitalOcean, and OVHcloud.
+         </p>
+                 <div class="image scroll-animate scale-in">
+           <img
+             src="/images/devopsflow-dashboard.png"
+             alt="DevOpsFlow - Multi-Cloud Deployment Dashboard"
+             loading="lazy"
+           />
+                  </div>
+         <p><a href="https://devopsflow.neopolis.dev" target="_blank" class="project-link">View Project →</a></p>
+         </div>
+         <hr />
+                 <div class="project-item">
+           <h2>7ouma Ligue</h2>
+           <h3>Projet Entrepreneurial</h3>
+                 <ul class="skills scroll-animate stagger">
+           <li>React.js</li>
+           <li>TypeScript</li>
+           <li>Node.js</li>
+           <li>Express.js</li>
+           <li>Prisma</li>
+           <li>PostgreSQL</li>
+         </ul>
+        <p>
+          A comprehensive SaaS platform for managing mini-football leagues with tournament management, team organization, 
+          real-time match display, online payments, integrated social network, academy management, and TV interface for public display. 
+          Built with React.js/TypeScript frontend, Node.js/Express.js backend, Prisma ORM, PostgreSQL database, 
+          Docker containerization, and deployed on Azure with microservices architecture.
+        </p>
+                 <div class="image scroll-animate scale-in">
+           <img
+             src="/images/7ouma-ligue-tournament.png"
+             alt="7ouma Ligue - Tournament Management Dashboard"
+             loading="lazy"
+           />
+         </div>
+                 <p><a href="https://gray-tree-0ae561303.2.azurestaticapps.net/" target="_blank" class="project-link">View Project →</a></p>
+         </div>
+         <hr />
+                          <div class="project-item">
+           <h2>King of Dattes</h2>
+           <h3>Projet Entrepreneurial</h3>
+           <ul class="skills scroll-animate stagger">
+             <li>React.js</li>
+             <li>TypeScript</li>
+             <li>NestJS</li>
+             <li>Prisma</li>
+             <li>PostgreSQL</li>
+             <li>Supabase</li>
+           </ul>
+        <p>
+          A full-stack E-commerce platform specializing in the sale of Tunisian products (dates, kouffa, etc.) with comprehensive 
+          product management and secure payment processing. Built with React.js, TypeScript frontend, NestJS backend, Prisma ORM, 
+          PostgreSQL database, Supabase services, and deployed on Azure.
+        </p>
+                 <div class="image scroll-animate scale-in">
+           <img
+             src="/images/king-of-dattes-ecommerce.png"
+             alt="King of Dattes - E-commerce Platform"
+             loading="lazy"
+           />
+         </div>
+                 <p><a href="https://kingofdattes.com" target="_blank" class="project-link">View Project →</a></p>
+         </div>
+         <hr />
+                          <div class="project-item">
+           <h2>CloudCost Optimizer</h2>
+           <h3>Initiative Personnelle</h3>
+           <ul class="skills scroll-animate stagger">
+             <li>React</li>
+             <li>Python</li>
+             <li>FastAPI</li>
+             <li>PostgreSQL</li>
+             <li>Scikit-learn</li>
+             <li>AWS Lambda</li>
+           </ul>
+        <p>
+           An AI-powered multi-cloud SaaS platform aggregating cost and usage data from AWS, Azure, and GCP with intelligent 
+           optimization recommendations. Built with React frontend, Python/FastAPI backend, PostgreSQL database, 
+           Scikit-learn for ML, Terraform for multi-cloud infrastructure, and AWS Lambda services.
+        </p>
+                 <div class="image scroll-animate scale-in">
+           <img
+             src="/images/cloudcost-optimizer-analytics.png"
+             alt="CloudCost Optimizer - Analytics Dashboard"
+             loading="lazy"
+           />
+         </div>
+                  <p><a href="https://cloudcost-optimizer.aminebarka.dev" target="_blank" class="project-link">View Project →</a></p>
+         </div>
+         <hr />
+                          <div class="project-item">
+           <h2>ServerlessCanvas</h2>
+           <h3>Défi Technique Personnel</h3>
+           <ul class="skills scroll-animate stagger">
+             <li>React</li>
+             <li>React Flow</li>
+             <li>Node.js</li>
+             <li>AWS Lambda</li>
+             <li>API Gateway</li>
+             <li>Terraform</li>
+           </ul>
+        <p>
+           A visual workflow editor allowing users to design APIs and backend logic via drag-and-drop with automated 
+           code generation and infrastructure provisioning. Built with React/React Flow frontend, Node.js backend, 
+           EJS templates for code generation, AWS Lambda/API Gateway for serverless infrastructure, Terraform for IaC, 
+           and PostgreSQL database.
+        </p>
+                 <div class="image scroll-animate scale-in">
+           <img
+             src="/images/serverlesscanvas-workflow.png"
+             alt="ServerlessCanvas - Visual Workflow Editor"
+             loading="lazy"
+           />
+         </div>
+                  <p><a href="https://serverlesscanvas.aminebarka.dev" target="_blank" class="project-link">View Project →</a></p>
+         </div>
+         <hr />
+                          <div class="project-item">
+           <h2>Recruitment Management Application</h2>
+           <h3>Mission Professionnelle | AURES Group</h3>
+           <ul class="skills scroll-animate stagger">
+             <li>MongoDB</li>
+             <li>Express.js</li>
+             <li>React</li>
+             <li>Node.js</li>
+             <li>JWT</li>
+             <li>2FA</li>
+           </ul>
+        <p>
+           A full-stack MERN application for managing recruitment processes with advanced authentication and 
+           comprehensive candidate tracking. Built with complete MERN stack (MongoDB, Express.js, React, Node.js) 
+           and enhanced security features including JWT authentication and two-factor authentication (2FA).
+        </p>
+                 <div class="image scroll-animate scale-in">
+           <img
+             src="/images/recruitment-management-dashboard.png"
+             alt="Recruitment Management - Dashboard"
+             loading="lazy"
+           />
+         </div>
+                  <p><a href="https://recruitment.auresgroup.com" target="_blank" class="project-link">View Project →</a></p>
+         </div>
+
+         <p class="scroll-animate fade-in-up">
+           These projects represent my journey in software engineering, from academic projects to personal 
+           ventures, showcasing my expertise in full-stack development, DevOps, cloud architecture, and 
+           innovative SaaS solutions.
+         </p>
+      </section>
+
+             <section class="scroll-animate fade-in-up">
+         <h1 id="contact">Contact</h1>
+         <div class="contact-content">
+           <p style="text-align: center; margin-bottom: 30px;">
+             I'm always open to discussing new opportunities, interesting projects, or just having a chat about technology.
+           </p>
+           
+           <div class="contact-methods">
+             <div class="contact-item scroll-animate slide-left">
+               <h3>📧 Email</h3>
+               <a href="mailto:aminebarka1212@gmail.com" class="contact-link">
+                 aminebarka1212@gmail.com
+               </a>
+             </div>
+             
+             <div class="contact-item scroll-animate slide-right">
+               <h3>💼 LinkedIn</h3>
+               <a href="https://www.linkedin.com/in/aminebarka/" target="_blank" class="contact-link">
+                 linkedin.com/in/aminebarka
+               </a>
+             </div>
+             
+             <div class="contact-item scroll-animate slide-left">
+               <h3>🐙 GitHub</h3>
+               <a href="https://github.com/aminebarka" target="_blank" class="contact-link">
+                 github.com/aminebarka
+               </a>
+             </div>
+           </div>
+           
+           <p style="text-align: center; margin-top: 30px; font-style: italic;">
+             Feel free to reach out for collaborations, job opportunities, or just to say hello! 👋
+           </p>
+         </div>
+       </section>
+    </main>
+
+    <input type="text" id="textarea" readonly />
+    <div id="loading">
+      <h2>Booting...</h2>
+      <div id="loading-bar">
+        <div id="loading-bar-progress"></div>
+      </div>
+      <div id="loading-items">Starting...</div>
+    </div>
+    <footer>
+      <div>Developed + Designed by Amine Barka.</div>
+      <div>Computer design based on the Commodore PET 8296.</div>
+      <div>
+        Built on the traditional land of the Wurundjeri and Boon Wurrung peoples
+        of the Kulin nation. I pay my respect to Elders past, present and
+        emerging.
+      </div>
+      <div>
+        Sovereignty has never been ceded. It always was and always will be
+        Aboriginal land.
+      </div>
+      <div>COPYRIGHT © 2024 Amine Barka.</div>
+    </footer>
+    <script>
+      function closeMenu() {
+        document.getElementsByTagName("nav")[0].classList.remove(["active"]);
+      }
+
+      function toggleMenu() {
+        const nav = document.getElementsByTagName("nav")[0];
+        if (nav.classList.contains("active")) {
+          nav.classList.remove(["active"]);
+        } else {
+          nav.classList.add("active");
+        }
+      }
+    </script>
+    <script
+      fetchpriority="high"
+      src="https://cdn-ts.netlify.app/webgl-helper@3.0.11/webgl-helper.min.js"
+    ></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-EDNKHGV4HB"
+    ></script>
+         <script>
+       window.dataLayer = window.dataLayer || [];
+       function gtag() {
+         dataLayer.push(arguments);
+       }
+       gtag("js", new Date());
+       gtag("config", "G-EDNKHGV4HB");
+       gtag("event", "origin", { name: window.origin });
+     </script>
+
+     <!-- Scroll Animations Script -->
+     <script>
+       // Intersection Observer for scroll animations
+       const observerOptions = {
+         threshold: 0.1,
+         rootMargin: '0px 0px -50px 0px'
+       };
+
+       const observer = new IntersectionObserver((entries) => {
+         entries.forEach(entry => {
+           if (entry.isIntersecting) {
+             entry.target.classList.add('animate-in');
+           }
+         });
+       }, observerOptions);
+
+       // Observe all elements with scroll-animate class
+       document.addEventListener('DOMContentLoaded', () => {
+         const animatedElements = document.querySelectorAll('.scroll-animate, .project-item');
+         animatedElements.forEach(el => {
+           observer.observe(el);
+         });
+       });
+
+       // Re-observe elements when they come into view
+       window.addEventListener('scroll', () => {
+         const animatedElements = document.querySelectorAll('.scroll-animate:not(.animate-in), .project-item:not(.animate-in)');
+         animatedElements.forEach(el => {
+           observer.observe(el);
+         });
+       });
+     </script>
+  </body>
+</html>
