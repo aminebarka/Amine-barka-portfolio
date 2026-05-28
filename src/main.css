@@ -580,3 +580,55 @@ a:active {
   box-shadow: 0 8px 24px rgba(82, 82, 82, 0.25);
   border-color: rgba(82, 82, 82, 0.2);
 }
+
+/* Project Status Badges */
+.project-badge {
+  display: inline-block;
+  font-family: "chill", sans-serif;
+  font-size: 0.65em;
+  font-weight: bold;
+  padding: 3px 10px;
+  border-radius: 20px;
+  letter-spacing: 0.03em;
+  vertical-align: middle;
+  margin-left: 10px;
+  border: 1px solid transparent;
+}
+
+.badge-delivered {
+  background-color: rgba(34, 197, 94, 0.15);
+  color: #16a34a;
+  border-color: rgba(34, 197, 94, 0.4);
+}
+
+.badge-in-progress {
+  background-color: rgba(234, 179, 8, 0.15);
+  color: #92400e;
+  border-color: rgba(234, 179, 8, 0.4);
+}
+
+/* Project Features List */
+.features-list {
+  padding: 16px;
+  text-align: left;
+  line-height: 1.6;
+  width: clamp(0px, 95vw, 680px);
+  margin: 0 auto 8px;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+.features-list li {
+  padding: 4px 0 4px 22px;
+  position: relative;
+  color: var(--color);
+  font-size: 0.92em;
+}
+
+.features-list li::before {
+  content: "▸";
+  position: absolute;
+  left: 4px;
+  color: var(--color);
+  opacity: 0.6;
+}
