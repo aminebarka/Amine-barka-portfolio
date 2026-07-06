@@ -3,6 +3,9 @@ import WebGL from "./webgl";
 
 WebGL();
 
+window.onerror = function(msg, url, line, col, error) {
+  alert("Error: " + msg + "\nurl: " + url + "\nline: " + line);
+};
 const root = document.documentElement;
 
 function onScroll() {

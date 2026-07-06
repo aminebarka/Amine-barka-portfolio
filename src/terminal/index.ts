@@ -28,7 +28,7 @@ export default function Terminal(screenTextEngine: {
   textarea.readOnly = true;
   textarea.blur();
   screenTextEngine.placeMarkdown(titleText);
-  screenTextEngine.placeText("user:~$");
+  // screenTextEngine.placeText("user:~$");
 
   const bash = Bash((s, md = false) => {
     if (md) {

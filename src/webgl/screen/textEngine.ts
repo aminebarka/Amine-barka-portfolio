@@ -132,6 +132,7 @@ export default function ScreenTextEngine(
 
     const charWidth = h2Font.width + h2Font.tracking;
     const charsPerLine = Math.floor(screenWidth / charWidth);
+    console.log("textEngine running! screenWidth:", screenWidth, "charsPerLine:", charsPerLine, "terminalPromptOffset:", terminalPromptOffset);
 
     if (pos !== undefined) {
       charPos.x =
@@ -299,7 +300,7 @@ export default function ScreenTextEngine(
         };
       }
       // br
-      else if (md[i] === "") {
+      else if (md[i] === "\n") {
         if (currentToken !== undefined) {
           tokens.push(currentToken);
           currentToken = undefined;
@@ -673,19 +674,22 @@ export default function ScreenTextEngine(
 
     const height = width / aspectRatio;
 
+    const xOffsetParam = parseFloat(params.get("x") ?? "");
+    const xOffset = Number.isNaN(xOffsetParam) ? 1.4 / 2 : xOffsetParam;
+
     const imageFrame = new THREE.Mesh(
       new THREE.PlaneBufferGeometry(width, height, 1, 1),
       new THREE.MeshBasicMaterial({ color: 0x000000 })
     );
 
-    imageFrame.position.set(1.4 / 2, -height * 0.5 - charNextLoc.y, -0.02);
+    imageFrame.position.set(xOffset, -height * 0.5 - charNextLoc.y, -0.02);
     if (!params.get("noflow")) charNextLoc.y += height;
     rootGroup.add(imageFrame);
 
     const textureLoader = new THREE.TextureLoader();
     textureLoader.load(url, (tex) => {
       tex.magFilter = THREE.NearestFilter;
-      imageFrame.material = new THREE.MeshBasicMaterial({ map: tex });
+      imageFrame.material = new THREE.MeshBasicMaterial({ map: tex, transparent: true });
     });
   }
 
