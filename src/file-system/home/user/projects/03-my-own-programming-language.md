@@ -1,5 +1,5 @@
 # King of Dattes
-## Projet Entrepreneurial
+## Entrepreneurial Project
 
 A full-stack E-commerce platform specializing in the sale of Tunisian products (dates, kouffa, etc.) with comprehensive product management and secure payment processing.
 

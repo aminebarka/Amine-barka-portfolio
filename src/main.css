@@ -393,8 +393,7 @@ a:active {
 
 /* Scroll Animations */
 .scroll-animate {
-  opacity: 0;
-  transform: translateY(30px);
+  opacity: 1;
   transition: all 0.6s ease;
 }
 
@@ -437,8 +436,7 @@ a:active {
 
 /* Stagger animations for lists */
 .scroll-animate.stagger > * {
-  opacity: 0;
-  transform: translateY(20px);
+  opacity: 1;
   transition: all 0.4s ease;
 }
 
@@ -456,8 +454,7 @@ a:active {
 
 /* Project section specific animations */
 .project-item {
-  opacity: 0;
-  transform: translateY(40px);
+  opacity: 1;
   transition: all 0.8s ease;
 }
 
@@ -468,8 +465,7 @@ a:active {
 
 /* Image animations */
 .image {
-  opacity: 0;
-  transform: scale(0.95);
+  opacity: 1;
   transition: all 0.6s ease;
 }
 

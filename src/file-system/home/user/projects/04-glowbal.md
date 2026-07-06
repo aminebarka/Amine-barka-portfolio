@@ -1,5 +1,5 @@
 # CloudCost Optimizer
-## Initiative Personnelle
+## Personal Initiative
 
 An AI-powered multi-cloud SaaS platform aggregating cost and usage data from AWS, Azure, and GCP with intelligent optimization recommendations.
 

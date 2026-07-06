@@ -1,5 +1,5 @@
 # 7ouma Ligue
-## 2024 - Projet Entrepreneurial
+## 2024 - Entrepreneurial Project
 
 A comprehensive SaaS platform for managing football tournaments with intelligent group draw algorithm, live match statistics, and comprehensive tournament management.
 

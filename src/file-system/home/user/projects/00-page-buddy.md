@@ -1,5 +1,5 @@
 # DevOpsFlow
-## Projet de Fin d'Études | Neopolis Development
+## Graduation Project | Neopolis Development
 
 A comprehensive Multi-Cloud Deployment Automation SaaS platform for multi-environment (Dev, Staging, Prod) deployment automation.
 

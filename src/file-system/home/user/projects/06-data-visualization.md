@@ -1,5 +1,5 @@
 # Recruitment Management Application
-## Mission Professionnelle | AURES Group
+## Professional Mission | AURES Group
 
 A full-stack MERN application for managing recruitment processes with advanced authentication and comprehensive candidate tracking.
 

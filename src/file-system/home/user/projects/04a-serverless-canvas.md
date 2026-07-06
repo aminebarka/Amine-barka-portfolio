@@ -1,5 +1,5 @@
 # ServerlessCanvas
-## Défi Technique Personnel
+## Personal Technical Challenge
 
 A visual workflow editor allowing users to design APIs and backend logic via drag-and-drop with automated code generation and infrastructure provisioning. Built with React/React Flow frontend, Node.js backend, EJS templates for code generation, AWS Lambda/API Gateway for serverless infrastructure, Terraform for IaC, and PostgreSQL database.
 

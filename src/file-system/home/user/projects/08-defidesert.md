@@ -1,7 +1,5 @@
 # Défi du Désert Voyages
-## Client — B Studio
-
-Refonte totale d'un site HTML statique de 2010 pour une agence spécialisée circuits 4x4, Raids Quad & SSV et méharée au sud tunisien. Design cinématique aventure — entre National Geographic et agence de raid premium.
+Complete redesign of a static HTML website from 2010 for an agency specializing in 4x4 tours, Quad & SSV Raids, and camel treks in southern Tunisia. Cinematic adventure design.
 
 **WordPress**
 **PHP Custom**
@@ -10,4 +8,4 @@ Refonte totale d'un site HTML statique de 2010 pour une agence spécialisée cir
 
 This project demonstrates my expertise in modernizing legacy websites with dynamic features and cinematic design.
 
-**🔗 [View Project](https://v2.defidesert.com/)**
+**🔗 [View Project](https://defidesert.com/)**

@@ -1,5 +1,5 @@
 # 7ouma Ligue
-## Projet Entrepreneurial
+## Entrepreneurial Project
 
 A comprehensive SaaS platform for managing mini-football leagues with tournament management, team organization, real-time match display, online payments, integrated social network, academy management, and TV interface for public display.
 

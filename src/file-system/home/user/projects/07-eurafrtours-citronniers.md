@@ -1,7 +1,5 @@
 # Eurafatours & Domaine des Citronniers
-## Client — B Studio
-
-Site web unifié pour une agence de voyage (Eurafatours) et un gîte rural de luxe (Domaine des Citronniers) à Béni Khiar, Nabeul. 14 pages PHP custom avec design premium — splash screen animé, parallax, animations scroll, galerie, formulaire de contact, intégration Trustmary Airbnb. Déploiement CI/CD via GitHub Actions → Hostinger.
+Unified website for a travel agency (Eurafatours) and a luxury rural lodge (Domaine des Citronniers) in Béni Khiar, Nabeul. 14 custom PHP pages with premium design. CI/CD deployment via GitHub Actions → Hostinger.
 
 **WordPress**
 **PHP Custom**
