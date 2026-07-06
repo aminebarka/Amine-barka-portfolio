@@ -1,5 +1,5 @@
 # Eurafatours & Domaine des Citronniers
-Unified website for a travel agency (Eurafatours) and a luxury rural lodge (Domaine des Citronniers) in Béni Khiar, Nabeul. 14 custom PHP pages with premium design. CI/CD deployment via GitHub Actions → Hostinger.
+Unified website for a travel agency (Eurafatours) and a luxury rural lodge (Domaine des Citronniers) in Beni Khiar, Nabeul. 14 custom PHP pages with premium design. CI/CD deployment via GitHub Actions → Hostinger.
 
 **WordPress**
 **PHP Custom**

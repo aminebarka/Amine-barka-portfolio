@@ -5,7 +5,7 @@ A comprehensive Multi-Cloud Deployment Automation SaaS platform for multi-enviro
 
 **Frontend:** React.js
 **Backend & API:** Django REST Framework (Python)
-**Base de données:** PostgreSQL
+**Base de donnees:** PostgreSQL
 **DevOps & Cloud:** Docker, Kubernetes (Helm), Terraform, GitLab CI, Jenkins
 **Monitoring:** Prometheus, Grafana
 **Message Broker:** Kafka

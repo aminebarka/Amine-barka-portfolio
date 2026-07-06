@@ -5,7 +5,7 @@ A comprehensive SaaS platform for managing football tournaments with intelligent
 
 **Frontend:** React.js
 **Backend & API:** Node.js, Express.js
-**Base de données:** MongoDB
+**Base de donnees:** MongoDB
 **Paiement:** Stripe
 **Containerisation:** Docker
 **Cloud & Deployment:** AWS (EC2, S3, etc.)

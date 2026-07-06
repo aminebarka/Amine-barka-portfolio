@@ -6,10 +6,10 @@ with open('index.html', 'r', encoding='utf-8') as f:
     html = f.read()
 
 # 1. Translate titles
-html = html.replace("Projet de Fin d'Études", "Graduation Project")
+html = html.replace("Projet de Fin d'etudes", "Graduation Project")
 html = html.replace("Projet Entrepreneurial", "Entrepreneurial Project")
 html = html.replace("Initiative Personnelle", "Personal Initiative")
-html = html.replace("Défi Technique Personnel", "Personal Technical Challenge")
+html = html.replace("Defi Technique Personnel", "Personal Technical Challenge")
 html = html.replace("Mission Professionnelle", "Professional Mission")
 html = html.replace("Client — B Studio", "")
 html = html.replace('<span class="project-badge badge-in-progress">🟡 En cours — 2026</span>', '')
@@ -34,7 +34,7 @@ def process_project(html_content, h2_title, new_desc, remove_b_studio, remove_fe
         block = re.sub(r'<ul class="features-list">.*?</ul>\s*', '', block, flags=re.DOTALL)
         
     # Replace description paragraph (find the paragraph that contains the text to be replaced)
-    block = re.sub(r'<p>\s*(?:Site web unifié|Site web pour un camp|Refonte totale|Blog magazine).*?</p>', f'<p>\n             {new_desc}\n           </p>', block, flags=re.DOTALL)
+    block = re.sub(r'<p>\s*(?:Site web unifie|Site web pour un camp|Refonte totale|Blog magazine).*?</p>', f'<p>\n             {new_desc}\n           </p>', block, flags=re.DOTALL)
     
     if new_link:
         if 'View Project' in block:
@@ -62,14 +62,14 @@ def process_project(html_content, h2_title, new_desc, remove_b_studio, remove_fe
     return html_content
 
 html = process_project(html, "Eurafatours &amp; Domaine des Citronniers", 
-    "Unified website for a travel agency (Eurafatours) and a luxury rural lodge (Domaine des Citronniers) in Béni Khiar, Nabeul. 14 custom PHP pages with premium design. CI/CD deployment via GitHub Actions → Hostinger.", 
+    "Unified website for a travel agency (Eurafatours) and a luxury rural lodge (Domaine des Citronniers) in Beni Khiar, Nabeul. 14 custom PHP pages with premium design. CI/CD deployment via GitHub Actions → Hostinger.", 
     True, True)
 
 html = process_project(html, "Camp Abdelmoula", 
-    "Website for a luxury camp in the heart of the Tunisian Sahara in Tembaine, Douz. 51 tents including 27 royal ones. Cinematic design inspired by the desert with a sand/gold/night palette. Cross-branding with Défi du Désert Voyages.", 
+    "Website for a luxury camp in the heart of the Tunisian Sahara in Tembaine, Douz. 51 tents including 27 royal ones. Cinematic design inspired by the desert with a sand/gold/night palette. Cross-branding with Defi du Desert Voyages.", 
     True, True, "https://camp-abdelmoula.com/", "/images/camp-abdelmoula.png")
 
-html = process_project(html, "Défi du Désert Voyages", 
+html = process_project(html, "Defi du Desert Voyages", 
     "Complete redesign of a static HTML website from 2010 for an agency specializing in 4x4 tours, Quad & SSV Raids, and camel treks in southern Tunisia. Cinematic adventure design.", 
     True, True, "https://defidesert.com/")
 
@@ -105,7 +105,7 @@ if match:
     
     eurafatours = [p for p in projects if 'Eurafatours &amp; Domaine des Citronniers' in p]
     camp = [p for p in projects if 'Camp Abdelmoula' in p]
-    defi = [p for p in projects if 'Défi du Désert Voyages' in p]
+    defi = [p for p in projects if 'Defi du Desert Voyages' in p]
     untold = [p for p in projects if 'The Untold Layers' in p]
     
     others = [p for p in projects if p not in eurafatours + camp + defi + untold]
@@ -141,10 +141,10 @@ for md_file in md_files:
         md_content = f.read()
 
     # Apply translations
-    md_content = md_content.replace("Projet de Fin d'Études", "Graduation Project")
+    md_content = md_content.replace("Projet de Fin d'etudes", "Graduation Project")
     md_content = md_content.replace("Projet Entrepreneurial", "Entrepreneurial Project")
     md_content = md_content.replace("Initiative Personnelle", "Personal Initiative")
-    md_content = md_content.replace("Défi Technique Personnel", "Personal Technical Challenge")
+    md_content = md_content.replace("Defi Technique Personnel", "Personal Technical Challenge")
     md_content = md_content.replace("Mission Professionnelle", "Professional Mission")
     md_content = md_content.replace("## Client — B Studio\n\n", "")
     md_content = md_content.replace("## Client — B Studio", "")
@@ -152,10 +152,10 @@ for md_file in md_files:
     # Specific file updates
     filename = os.path.basename(md_file)
     if filename == '07-eurafrtours-citronniers.md':
-        md_content = re.sub(r'Site web unifié.*?Hostinger\.', "Unified website for a travel agency (Eurafatours) and a luxury rural lodge (Domaine des Citronniers) in Béni Khiar, Nabeul. 14 custom PHP pages with premium design. CI/CD deployment via GitHub Actions → Hostinger.", md_content, flags=re.DOTALL)
+        md_content = re.sub(r'Site web unifie.*?Hostinger\.', "Unified website for a travel agency (Eurafatours) and a luxury rural lodge (Domaine des Citronniers) in Beni Khiar, Nabeul. 14 custom PHP pages with premium design. CI/CD deployment via GitHub Actions → Hostinger.", md_content, flags=re.DOTALL)
         md_content = re.sub(r'Features:\n.*', '', md_content, flags=re.DOTALL)
     elif filename == '09-camp-abdelmoula.md':
-        md_content = re.sub(r'Site web pour un camp.*?Voyages\.', "Website for a luxury camp in the heart of the Tunisian Sahara in Tembaine, Douz. 51 tents including 27 royal ones. Cinematic design inspired by the desert with a sand/gold/night palette. Cross-branding with Défi du Désert Voyages.", md_content, flags=re.DOTALL)
+        md_content = re.sub(r'Site web pour un camp.*?Voyages\.', "Website for a luxury camp in the heart of the Tunisian Sahara in Tembaine, Douz. 51 tents including 27 royal ones. Cinematic design inspired by the desert with a sand/gold/night palette. Cross-branding with Defi du Desert Voyages.", md_content, flags=re.DOTALL)
         md_content = re.sub(r'Features:\n(?:- .*\n)*', '', md_content, flags=re.DOTALL)
         if 'https://camp-abdelmoula.com/' not in md_content:
             md_content += "\nLink: [https://camp-abdelmoula.com/](https://camp-abdelmoula.com/)\n"

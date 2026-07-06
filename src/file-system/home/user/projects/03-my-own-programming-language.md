@@ -5,10 +5,10 @@ A full-stack E-commerce platform specializing in the sale of Tunisian products (
 
 **Frontend:** React.js, TypeScript
 **Backend & API:** NestJS
-**Base de données:** PostgreSQL
+**Base de donnees:** PostgreSQL
 **ORM:** Prisma
 **Services:** Supabase
-**Platforme de déploiement:** Azure
+**Platforme de deploiement:** Azure
 
 This project demonstrates my expertise in building scalable e-commerce platforms with secure payment processing and comprehensive management systems.
 

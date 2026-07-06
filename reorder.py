@@ -20,7 +20,7 @@ if match:
     # find the specific projects
     eurafatours = [p for p in projects if 'Eurafatours &amp; Domaine des Citronniers' in p]
     camp = [p for p in projects if 'Camp Abdelmoula' in p]
-    defi = [p for p in projects if 'Défi du Désert Voyages' in p]
+    defi = [p for p in projects if 'Defi du Desert Voyages' in p]
     untold = [p for p in projects if 'The Untold Layers' in p]
     
     others = [p for p in projects if p not in eurafatours + camp + defi + untold]

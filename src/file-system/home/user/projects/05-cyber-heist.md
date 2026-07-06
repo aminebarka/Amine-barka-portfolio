@@ -5,19 +5,19 @@ A comprehensive SaaS platform for managing mini-football leagues with tournament
 
 **Frontend:** React.js, TypeScript
 **Backend & API:** Node.js, Express.js
-**Base de données:** PostgreSQL
+**Base de donnees:** PostgreSQL
 **ORM:** Prisma
 **Conteneurisation:** Docker, Docker Compose
-**Cloud & Déploiement:** Azure (Web Apps, Database, Container Instances)
+**Cloud & Deploiement:** Azure (Web Apps, Database, Container Instances)
 **Architecture:** Microservices
 
-**Fonctionnalités Principales:**
-- Gestion de tournois et équipes
-- Système de réservations
+**Fonctionnalites Principales:**
+- Gestion de tournois et equipes
+- Système de reservations
 - Paiements en ligne
-- Affichage temps réel des matchs
-- Réseau social intégré
-- Gestion des académies
+- Affichage temps reel des matchs
+- Reseau social integre
+- Gestion des academies
 - Interface TV pour affichage public
 
 This project demonstrates my expertise in building scalable SaaS platforms with real-time features, payment integration, and modern cloud architecture.

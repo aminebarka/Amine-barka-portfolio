@@ -5,7 +5,7 @@ An AI-powered multi-cloud SaaS platform aggregating cost and usage data from AWS
 
 **Frontend:** React
 **Backend & API:** Python, FastAPI
-**Base de données:** PostgreSQL
+**Base de donnees:** PostgreSQL
 **ML & Data:** Scikit-learn
 **DevOps & IaC:** Terraform (Multi-cloud)
 **Cloud:** AWS (Lambda, autres services)

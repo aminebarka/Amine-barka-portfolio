@@ -45,7 +45,7 @@ if match:
             if 'https://camp-abdelmoula.com/' not in unique_projects[i]:
                  unique_projects[i] += '\n           <p><a href="https://camp-abdelmoula.com/" target="_blank" class="project-link">View Project →</a></p>'
                  
-        elif '<h2>Défi du Désert Voyages</h2>' in p:
+        elif '<h2>Defi du Desert Voyages</h2>' in p:
             # link should be https://defidesert.com/
             unique_projects[i] = re.sub(r'href="[^"]+"', 'href="https://defidesert.com/"', unique_projects[i])
             
