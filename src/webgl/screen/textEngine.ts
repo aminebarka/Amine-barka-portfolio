@@ -43,7 +43,7 @@ const h3Font: FontInfo = (function () {
   return { font: undefined, size, height, width, leading, tracking };
 })();
 
-declare const screenWidth: number;
+const screenWidth = 1.396;
 
 const paragraphFont: FontInfo = (function () {
   const size = 0.0275;
@@ -299,7 +299,7 @@ export default function ScreenTextEngine(
         };
       }
       // br
-      else if (md[i] === "\n") {
+      else if (md[i] === "") {
         if (currentToken !== undefined) {
           tokens.push(currentToken);
           currentToken = undefined;
@@ -444,7 +444,7 @@ export default function ScreenTextEngine(
 
     let numOfLines = 0;
 
-    const strWithNewline = str.split("\n");
+    const strWithNewline = str.split("");
 
     for (let i = 0; i < strWithNewline.length; i++) {
       const inputBuffer = [];
