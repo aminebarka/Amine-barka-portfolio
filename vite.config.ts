@@ -7,6 +7,7 @@ export default defineConfig({
   worker: {},
   build: {
     sourcemap: false,
+    chunkSizeWarningLimit: 2000,
   },
   server: {
     open: true,
