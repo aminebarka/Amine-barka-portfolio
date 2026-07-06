@@ -299,7 +299,7 @@ export default function ScreenTextEngine(
         };
       }
       // br
-      else if (md[i] === "") {
+      else if (md[i] === "\n") {
         if (currentToken !== undefined) {
           tokens.push(currentToken);
           currentToken = undefined;
@@ -444,7 +444,7 @@ export default function ScreenTextEngine(
 
     let numOfLines = 0;
 
-    const strWithNewline = str.split("");
+    const strWithNewline = str.split("\n");
 
     for (let i = 0; i < strWithNewline.length; i++) {
       const inputBuffer = [];
